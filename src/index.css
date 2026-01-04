@@ -1,5 +1,5 @@
-@import url("../public/fonts/CabinetGrotesk_Complete/Fonts/WEB/css/cabinet-grotesk.css");
-@import url("../public/fonts/Switzer_Complete/Fonts/WEB/css/switzer.css");
+@import url("/fonts/CabinetGrotesk_Complete/Fonts/WEB/css/cabinet-grotesk.css");
+@import url("/fonts/Switzer_Complete/Fonts/WEB/css/switzer.css");
 @import "tailwindcss";
 
 @theme {
@@ -85,6 +85,24 @@
   --pad-4: 1rem;
   --pad-5: 1.5rem;
   --pad-6: 2rem;
+
+  /* =========================
+     HORIZONTAL PADDING (px)
+     ========================= */
+  --px-xs: 0.5rem; /* 8px  */
+  --px-sm: 1rem; /* 16px */
+  --px-md: 1.5rem; /* 24px */
+  --px-lg: 2rem; /* 32px */
+  --px-xl: 4rem; /* 64px */
+
+  /* =========================
+     VERTICAL PADDING (py)
+     ========================= */
+  --py-xs: 0.5rem; /* 8px  */
+  --py-sm: 1rem; /* 16px */
+  --py-md: 2rem; /* 32px */
+  --py-lg: 4rem; /* 64px */
+  --py-xl: 8rem; /* 128px */
 
   /* =========================
      BORDER RADIUS (Medium)

@@ -2,7 +2,7 @@ import Navbar from "../components/landing/Navbar";
 
 function LandingPage() {
   return (
-    <div>
+    <div className="">
       <Navbar />
     </div>
   );
