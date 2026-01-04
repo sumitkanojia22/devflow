@@ -18,7 +18,7 @@ function HeroSection() {
         <Ctabutton text={"Get Started"} />
       </div>
 
-      <div className="col-start-4 col-end-10 h-100 px-(--pad-1) py-(--pad-3) bg-[url(/images/herosecbelow.png)] bg-cover bg-no-repeat bg-center rounded-(--radius-md)"></div>
+      <div className="col-start-4 col-end-10 h-100 px-(--pad-1) py-(--pad-3) bg-[url(/images/herosecbelow.png)] bg-cover bg-no-repeat bg-center rounded-md"></div>
     </div>
   );
 }
