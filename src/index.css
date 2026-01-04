@@ -152,7 +152,6 @@ p {
   font-size: var(--text-p);
   line-height: var(--leading-p);
   letter-spacing: var(--tracking-p);
-  color: var(--color-text);
 }
 
 h1,
