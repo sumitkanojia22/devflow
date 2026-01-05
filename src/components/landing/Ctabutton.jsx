@@ -11,8 +11,9 @@ function Ctabutton({ text }) {
         bg-primary
         px-4 py-2
         text-cta-text
-        text-[2vw]
-        sm:text-[1vw]
+        text-[2.8vw]
+        md:text-p
+        xl:text-p
         whitespace-nowrap
         shadow-sm
         transition-colors
