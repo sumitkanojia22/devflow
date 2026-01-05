@@ -14,7 +14,7 @@ function Navbar() {
       </ul>
 
       <div className=" col-end-12 flex items-center font-secondary">
-        <Ctabutton text={"Start free Trial"} />
+        <Ctabutton text={"Sign up"} />
       </div>
     </nav>
   );
