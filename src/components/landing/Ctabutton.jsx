@@ -12,7 +12,7 @@ function Ctabutton({ text }) {
         px-4 py-2
         text-cta-text
         text-[2.8vw]
-        md:text-p
+        md:text-[1.6vw]
         xl:text-p
         whitespace-nowrap
         shadow-sm
