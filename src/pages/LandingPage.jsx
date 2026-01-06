@@ -4,11 +4,11 @@ import Navbar from "../components/landing/Navbar";
 
 function LandingPage() {
   return (
-    <div className="">
+    <>
       <Navbar />
       <HeroSection />
       <Feature />
-    </div>
+    </>
   );
 }
 

@@ -2,7 +2,7 @@ import Ctabutton from "./Ctabutton";
 
 function Navbar() {
   return (
-    <nav className="grid grid-cols-12 gap-x-2 p-4 sticky top-0 backdrop-blur-lg">
+    <nav className="grid grid-cols-12 gap-x-2 p-4 sticky top-0 z-10 backdrop-blur-lg">
       <div className="col-start-2 flex items-center">
         <h4>Devflow</h4>
       </div>
