@@ -1,11 +1,13 @@
+import Feature from "../components/landing/Feature";
 import HeroSection from "../components/landing/HeroSection";
 import Navbar from "../components/landing/Navbar";
 
 function LandingPage() {
   return (
-    <div className="min-h-screen bg-[url('/svg/hero.svg')] bg-no-repeat bg-top bg-cover">
+    <div className="">
       <Navbar />
       <HeroSection />
+      <Feature />
     </div>
   );
 }

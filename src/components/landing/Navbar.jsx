@@ -8,9 +8,15 @@ function Navbar() {
       </div>
 
       <ul className="col-start-5 col-end-9 flex items-center justify-evenly font-secondary">
-        <a href="#">Features</a>
-        <a href="#">How it works</a>
-        <a href="#">Pricing</a>
+        <li>
+          <a href="#">Features</a>
+        </li>
+        <li>
+          <a href="#">How it works</a>
+        </li>
+        <li>
+          <a href="#">Pricing</a>
+        </li>
       </ul>
 
       <div className=" col-end-12 flex items-center font-secondary">
