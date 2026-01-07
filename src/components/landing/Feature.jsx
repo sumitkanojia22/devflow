@@ -10,7 +10,7 @@ function Feature() {
         DevFlow keeps every task visible, organized, and moving.
       </p>
       <div className="xl:col-start-3 xl:col-end-11 md:col-start-2 md:col-end-8 col-start-2 col-end-7 p-4">
-        <div className="grid grid-cols-4 grid-rows-8 gap-4 h-150">
+        <div className="xl:grid xl:grid-cols-4 xl:grid-rows-8 md:grid md:grid-cols-4 md:grid-rows-8 flex flex-col gap-4 xl:h-150 md:h-150 py-8">
           <BentoCards
             colspan={"2"}
             rowspan={"5"}
@@ -31,9 +31,7 @@ function Feature() {
             rowend={"9"}
             imgsrc={"/images/f2.png"}
             title={"Workflows That Make Sense"}
-            para={
-              "Built-in rules prevent invalid transitions and keep work flowing correctly."
-            }
+            para={"Keep work flowing correctly."}
           />
           <BentoCards
             colspan={"2"}
@@ -43,10 +41,8 @@ function Feature() {
             colend={"5"}
             rowend={"4"}
             imgsrc={"/images/f3.png"}
-            title={"Find What Matters Instantly"}
-            para={
-              "Filter and search issues by status, priority, or title in seconds."
-            }
+            title={"Manage Tasks With Ease"}
+            para={"Create, edit, and organize issues directly on the board."}
           />
           <BentoCards
             colspan={"2"}
@@ -56,8 +52,8 @@ function Feature() {
             colend={"5"}
             rowend={"9"}
             imgsrc={"/images/f4.png"}
-            title={"Manage Tasks With Ease"}
-            para={"Create, edit, and organize issues directly on the board."}
+            title={" Find What Matters Instantly"}
+            para={" Filter and search issues by status, priority, or title."}
           />
         </div>
       </div>
