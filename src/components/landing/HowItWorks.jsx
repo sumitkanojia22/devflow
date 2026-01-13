@@ -8,14 +8,14 @@ function HowItWorks() {
         para={"DevFlow keeps every task visible, organized, and moving."}
       />
       {/* Image */}
-      <div className="xl:col-start-3 xl:col-end-11 md:col-start-2 md:col-end-8 col-start-2 col-end-7 rounded-md ">
-        <div className="bg-[url(/svg/feature.svg)] w-full h-64 bg-cover rounded-md border-[0.2px] border-zinc-200">
-          <div className="flex flex-col items-center justify-end h-full">
-            <div className="bg-bg xl:w-[80%] md:w-[70%] w-[65%] h-16.5 rounded-t-md border-[0.2px] border-zinc-200 "></div>
-            <div className="bg-bg xl:w-[90%] md:w-[80%] w-[75%] h-22.5 rounded-t-md border-[0.2px] border-zinc-200 "></div>
-          </div>
+      {/* <div className=" "> */}
+      <div className=" xl:col-start-3 xl:col-end-11 md:col-start-2 md:col-end-8 col-start-2 col-end-7 rounded-md bg-[url(/svg/feature.svg)] w-full h-64 bg-cover border-[0.2px] border-zinc-200">
+        <div className="flex flex-col items-center justify-end h-full">
+          <div className="bg-bg xl:w-[80%] md:w-[70%] w-[65%] h-16.5 rounded-t-md border-[0.2px] border-zinc-200 "></div>
+          <div className="bg-bg xl:w-[90%] md:w-[80%] w-[75%] h-22.5 rounded-t-md border-[0.2px] border-zinc-200 "></div>
         </div>
       </div>
+
       {/* HowitWorks */}
       <div className="xl:col-start-3 xl:col-end-11 md:col-start-2 md:col-end-8 col-start-2 col-end-7">
         <div className="flex xl:flex-row md:flex-row flex-col justify justify-between gap-2 h-120">
