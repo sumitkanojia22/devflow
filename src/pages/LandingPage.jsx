@@ -1,8 +1,8 @@
 import Feature from "../components/landing/Feature";
 import HeroSection from "../components/landing/HeroSection";
 import HowItWorks from "../components/landing/HowItWorks";
-import MyComponent from "../components/landing/MyComponent";
 import Navbar from "../components/landing/Navbar";
+import Pricing from "../components/landing/Pricing";
 
 function LandingPage() {
   return (
@@ -11,6 +11,7 @@ function LandingPage() {
       <HeroSection />
       <Feature />
       <HowItWorks />
+      <Pricing />
     </>
   );
 }
