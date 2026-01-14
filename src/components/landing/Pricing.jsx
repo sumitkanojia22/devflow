@@ -11,7 +11,9 @@ function Pricing() {
       <PricingCard
         title={"Starter"}
         para={"For individuals and learning teams"}
-        features={"Unlimited personal projects,Kanban board & workflows"}
+        features={
+          "Unlimited personal projects,Kanban board & workflows,Issue creation & management, Search & filters, Local persistence"
+        }
       />
     </div>
   );
