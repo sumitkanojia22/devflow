@@ -1,17 +1,20 @@
 import Ctabutton from "./Ctabutton";
 
-function PricingCard({ title, para, price, features }) {
+function PricingCard({ title, para, price, features, bgNum }) {
   const featuresArr = features.split(",");
-  console.log(featuresArr);
   return (
-    <div className="w-max h-120 border-[0.2px] border-zinc-200 shadow-md rounded-md flex flex-col justify-between p-4">
-      <div>
+    <div
+      className={`xl:w-87.5 xl:h-120 md:w-[50%] md:h-100 w-87.5 h-120 border-[0.2px] border-zinc-200 rounded-md flex flex-col justify-between p-6 shadow-2xl  ${
+        bgNum === 0 ? "shadow-cta" : "shadow-zinc-200"
+      } `}
+    >
+      <div className="flex flex-col gap-2">
         <h4>{title}</h4>
         <h2>{price == null ? "Free" : price + "/month"}</h2>
         <h6 className="">{para}</h6>
         <div>
-          {featuresArr.map((features) => (
-            <p className="flex gap-2 items-center ">
+          {featuresArr.map((features, index) => (
+            <p key={index} className="flex gap-2 items-center ">
               <span className="size-2 rounded-full bg-cta"></span>
               {features}
             </p>
