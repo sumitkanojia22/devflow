@@ -1,11 +1,11 @@
 import Ctabutton from "./Ctabutton";
 
-function PricingCard({ title, para, price, features, bgNum }) {
+function PricingCard({ title, para, price, features, bgNum = false }) {
   const featuresArr = features.split(",");
   return (
     <div
-      className={`xl:w-87.5 xl:h-120 md:w-[50%] md:h-100 w-87.5 h-120 border-[0.2px] border-zinc-200 rounded-md flex flex-col justify-between p-6 shadow-2xl  ${
-        bgNum === 0 ? "shadow-cta" : "shadow-zinc-200"
+      className={`zxl:w-87.5 xl:h-120 md:w-[50%] md:h-100 w-87.5 h-120 border-[0.2px] border-zinc-200 rounded-md flex flex-col justify-between p-6 shadow-2xl scale-95 hover:scale-100 transition-all ease-in ${
+        bgNum ? "shadow-cta scale-105 hover:scale-110" : "shadow-zinc-200"
       } `}
     >
       <div className="flex flex-col gap-2">

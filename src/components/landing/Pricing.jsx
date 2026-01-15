@@ -24,7 +24,7 @@ function Pricing() {
             features={
               "Free included, Multiple projects & boards, Advanced workflow rules, Priority & status management, Faster performance experience"
             }
-            bgNum={0}
+            bgNum={true}
           />
           <PricingCard
             title={"Team"}
