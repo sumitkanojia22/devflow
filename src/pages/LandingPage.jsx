@@ -1,4 +1,5 @@
 import Feature from "../components/landing/Feature";
+import Footer from "../components/landing/Footer";
 import HeroSection from "../components/landing/HeroSection";
 import HowItWorks from "../components/landing/HowItWorks";
 import Navbar from "../components/landing/Navbar";
@@ -12,6 +13,7 @@ function LandingPage() {
       <Feature />
       <HowItWorks />
       <Pricing />
+      <Footer />
     </>
   );
 }
