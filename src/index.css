@@ -206,3 +206,36 @@ h6 {
   letter-spacing: var(--tracking-h6);
   font-weight: 400;
 }
+
+.heroeffect {
+  position: relative;
+}
+.heroeffect::after {
+  content: " ";
+  width: 20vw;
+  height: 200px;
+  border-radius: 0px 80% 80% 80%;
+  translate: (50 50);
+  transform: rotate(45deg);
+  top: 0;
+  left: 0;
+  background-color: var(--color-cta);
+  filter: blur(140px);
+  position: absolute;
+  z-index: -1;
+}
+
+.heroeffect::before {
+  content: " ";
+  width: 20vw;
+  height: 450px;
+  border-radius: 80%;
+  transform: rotate(-125deg);
+  /* transform: translateX(-200px); */
+  bottom: 0;
+  right: 0;
+  background-color: var(--color-cta);
+  filter: blur(140px);
+  position: absolute;
+  z-index: -1;
+}

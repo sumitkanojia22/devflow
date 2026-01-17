@@ -8,8 +8,10 @@ import Pricing from "../components/landing/Pricing";
 function LandingPage() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
+      <div className="heroeffect overflow-x-clip">
+        <Navbar />
+        <HeroSection />
+      </div>
       <Feature />
       <HowItWorks />
       <Pricing />
