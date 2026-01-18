@@ -4,17 +4,19 @@ import HeroSection from "../components/landing/HeroSection";
 import HowItWorks from "../components/landing/HowItWorks";
 import Navbar from "../components/landing/Navbar";
 import Pricing from "../components/landing/Pricing";
+import CtaSection from "../components/landing/CtaSection.jsx";
 
 function LandingPage() {
   return (
     <>
+      <Navbar />
       <div className="heroeffect overflow-x-clip">
-        <Navbar />
         <HeroSection />
       </div>
       <Feature />
       <HowItWorks />
       <Pricing />
+      <CtaSection />
       <Footer />
     </>
   );
