@@ -235,7 +235,7 @@ h6 {
   bottom: 0;
   right: 0;
   background-color: var(--color-cta);
-  filter: blur(140px);
+  filter: blur(160px);
   position: absolute;
   z-index: -1;
 }

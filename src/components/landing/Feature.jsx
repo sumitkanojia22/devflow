@@ -3,7 +3,10 @@ import SectionTitle from "./SectionTitle";
 
 function Feature() {
   return (
-    <div className="w-full grid grid-cols-7 md:grid-cols-8 xl:grid-cols-12 gap-x-2 gap-y-4 pt-16 pb-8">
+    <div
+      id="features"
+      className="w-full grid grid-cols-7 md:grid-cols-8 xl:grid-cols-12 gap-x-2 gap-y-4 pt-16 pb-8"
+    >
       <SectionTitle
         title={"Features"}
         para={"DevFlow keeps every task visible, organized, and moving."}

@@ -9,7 +9,7 @@ function Navbar() {
 
       <ul className="col-start-5 col-end-9 flex items-center justify-evenly font-secondary">
         <li>
-          <a href="#">Features</a>
+          <a href="#features">Features</a>
         </li>
         <li>
           <a href="#">How it works</a>
