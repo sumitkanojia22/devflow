@@ -7,7 +7,7 @@ function Navbar() {
         <h4>Devflow</h4>
       </div>
 
-      <ul className="col-start-5 col-end-9 flex items-center justify-evenly font-secondary">
+      <ul className="xl:col-start-5 xl:col-end-9 xl:flex items-center justify-evenly font-secondary md:hidden hidden">
         <li>
           <a href="#features">Features</a>
         </li>
