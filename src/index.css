@@ -219,8 +219,8 @@ h6 {
   transform: rotate(45deg);
   top: 0;
   left: 0;
-  background-color: var(--color-cta);
-  filter: blur(140px);
+  background-color: #7dd421;
+  filter: blur(90px);
   position: absolute;
   z-index: -1;
 }
@@ -234,8 +234,8 @@ h6 {
   /* transform: translateX(-200px); */
   bottom: 0;
   right: 0;
-  background-color: var(--color-cta);
-  filter: blur(160px);
+  background-color: #7dd421;
+  filter: blur(90px);
   position: absolute;
   z-index: -1;
 }
