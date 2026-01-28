@@ -1,6 +1,6 @@
 function LoginForm() {
   return (
-    <div className="w-full h-screen flex justify-center items-center font-secondary bg-[url(svg/signup.svg)] bg-cover">
+    <div className="w-full h-screen flex justify-center items-center font-secondary bg-[url(svg/login.svg)] bg-cover">
       <form
         action=""
         className="flex flex-col gap-2 p-8 border-[0.2px] border-zinc-500 rounded-md"
