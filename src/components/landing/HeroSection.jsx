@@ -41,7 +41,9 @@ function HeroSection() {
       </div>
 
       {/* Image BG */}
-      <div className="herosecimg xl:col-start-3 xl:col-end-11 md:col-start-2 md:col-end-8 col-start-2 col-end-7 xl:h-120 md:h-100 h-70 border-[0.2px] border-zinc-200   bg-[url(/images/herosecbelow.png)] xl:bg-cover md:bg-contain bg-contain bg-top bg-no-repeat rounded-md"></div>
+      <div className="herosecimg xl:col-start-3 xl:col-end-11 md:col-start-2 md:col-end-8 col-start-2 col-end-7 xl:h-120 md:h-100 h-70 border-[0.2px] border-zinc-200 bg-white xl:bg-cover md:bg-contain bg-contain bg-top bg-no-repeat rounded-md">
+        {/* bg-[url(/images/herosecbelow.png)] */}
+      </div>
     </div>
   );
 }
