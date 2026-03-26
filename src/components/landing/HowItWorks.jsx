@@ -1,22 +1,35 @@
 import gsap from "gsap";
 import SectionTitle from "./SectionTitle";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 function HowItWorks() {
   useGSAP(() => {
     gsap.from(".card", {
       scaleY: 0,
-      duration: 0.6,
+      duration: 0.5,
       stagger: 0.2,
       ease: "back.out",
+      scrollTrigger: {
+        trigger: "#whiteparent",
+        markers: true,
+        start: "0% 40%",
+      },
     });
 
     gsap.from(".workcard", {
       yPercent: 5,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.5,
       stagger: 0.2,
-      delay: 0.6,
+      delay: 0.2,
+      scrollTrigger: {
+        trigger: "#whiteparent",
+        markers: true,
+        start: "20% 40%",
+      },
     });
   }, []);
   return (
@@ -27,8 +40,11 @@ function HowItWorks() {
       />
       {/* Image */}
       {/* <div className=" "> */}
-      <div className=" xl:col-start-3 xl:col-end-11 md:col-start-2 md:col-end-8 col-start-2 col-end-7 rounded-md bg-[url(/svg/feature.svg)] w-full h-64 bg-cover border-[0.2px] border-zinc-200 mb-8">
-        <div className="flex flex-col items-center justify-end h-full relative">
+      <div className="xl:col-start-3 xl:col-end-11 md:col-start-2 md:col-end-8 col-start-2 col-end-7 rounded-md bg-[url(/svg/feature.svg)] w-full h-64 bg-cover border-[0.2px] border-zinc-200 mb-8">
+        <div
+          id="whiteparent"
+          className="flex flex-col items-center justify-end h-full relative"
+        >
           <div className="bg-bg xl:w-[80%] md:w-[70%] w-[65%] h-[65%] rounded-t-md border-[0.2px] border-zinc-200 card absolute origin-bottom shadow-2xl shadow-[#7dd421]"></div>
           <div className="bg-bg xl:w-[90%] md:w-[80%] w-[75%] h-22.5 rounded-t-md border-[0.2px] border-zinc-200 card origin-bottom shadow-2xl shadow-[#7dd421]"></div>
         </div>
