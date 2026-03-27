@@ -14,7 +14,7 @@ function HowItWorks() {
       ease: "back.out",
       scrollTrigger: {
         trigger: "#whiteparent",
-        markers: true,
+        // markers: true,
         start: "0% 40%",
       },
     });
@@ -27,7 +27,7 @@ function HowItWorks() {
       delay: 0.2,
       scrollTrigger: {
         trigger: "#whiteparent",
-        markers: true,
+        // markers: true,
         start: "20% 40%",
       },
     });
