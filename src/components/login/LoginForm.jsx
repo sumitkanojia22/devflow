@@ -6,19 +6,20 @@ function LoginForm() {
         className="flex flex-col gap-2 p-8 border-[0.2px] border-zinc-500 rounded-md"
       >
         <h2 className="text-center p-4">DEVFLOW.</h2>
-        <label htmlFor="">Username</label>
+        <label htmlFor="email">Email id </label>
         <input
           className="border-[0.2px] border-zinc-400 rounded-sm outline-none w-[20vw] px-2 py-1 bg-zinc-200/25"
-          type="text"
+          type="email"
+          id="email"
           placeholder="Username"
         />
-        <label htmlFor="">Password</label>
+        <label htmlFor="password">Password</label>
         <input
           className="border-[0.2px] border-zinc-400 rounded-sm outline-none w-[20vw] px-2 py-1 bg-zinc-200/25"
           type="password"
           placeholder="Password"
-          name=""
-          id=""
+          name="password"
+          id="password"
         />
 
         <div className="w-full flex justify-center items-center">
