@@ -15,8 +15,10 @@ function LoginForm() {
     e.preventDefault();
 
     const matchUser =
-      employeeList ||
       managerList.find((user) => {
+        return user.email_id === email && user.password === password;
+      }) ||
+      employeeList.find((user) => {
         return user.email_id === email && user.password === password;
       });
 
