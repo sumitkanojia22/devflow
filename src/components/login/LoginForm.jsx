@@ -1,4 +1,34 @@
+import { useContext, useState } from "react";
+import { DataContext } from "../../DataContext";
+import { LoginUserData } from "../../LoginUserData";
+import { useNavigate } from "react-router";
+
 function LoginForm() {
+  const { managerList, employeeList } = useContext(DataContext);
+  const navigate = useNavigate();
+
+  const { setUserData, setLogged } = useContext(LoginUserData);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function handleLogin(e) {
+    e.preventDefault();
+
+    const matchUser =
+      employeeList ||
+      managerList.find((user) => {
+        return user.email_id === email && user.password === password;
+      });
+
+    if (matchUser) {
+      setLogged(true);
+      setUserData(matchUser);
+      navigate("/");
+    } else {
+      console.log("Invalid");
+    }
+  }
+
   return (
     <div className="w-full h-screen flex justify-center items-center font-secondary bg-[url(svg/login.svg)] bg-cover">
       <form
@@ -11,7 +41,11 @@ function LoginForm() {
           className="border-[0.2px] border-zinc-400 rounded-sm outline-none w-[20vw] px-2 py-1 bg-zinc-200/25"
           type="email"
           id="email"
-          placeholder="Username"
+          placeholder="Email id"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
         />
         <label htmlFor="password">Password</label>
         <input
@@ -20,10 +54,20 @@ function LoginForm() {
           placeholder="Password"
           name="password"
           id="password"
+          value={password}
+          onChange={(e) => {
+            setPassword(e.target.value);
+          }}
         />
 
         <div className="w-full flex justify-center items-center">
-          <button className="bg-cta px-2 py-1 rounded-sm text-bg">Login</button>
+          <button
+            className="bg-cta px-2 py-1 rounded-sm text-bg"
+            type="submit"
+            onClick={handleLogin}
+          >
+            Login
+          </button>
         </div>
       </form>
     </div>

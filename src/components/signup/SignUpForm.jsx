@@ -12,7 +12,6 @@ function SignUpForm() {
   const [confirmpassword, setConfirmpassword] = useState("");
 
   function handleSignUp(e) {
-    console.log(role);
     e.preventDefault();
     if (password === confirmpassword && role === "manager") {
       const newManager = {
