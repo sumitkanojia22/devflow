@@ -25,7 +25,7 @@ function LoginForm() {
     if (matchUser) {
       setLogged(true);
       setUserData(matchUser);
-      navigate("/");
+      navigate("/dashboard");
     } else {
       console.log("Invalid");
     }
